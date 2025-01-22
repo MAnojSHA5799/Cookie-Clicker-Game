@@ -1,0 +1,94 @@
+/* General styling for the container */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/public/bg.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Content wrapper styling */
+.home-content {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(241, 240, 240, 0.8); /* The last number (0.8) sets transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Title styling */
+.home-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description text */
+.home-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Buttons container */
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Button styling */
+.home-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Primary button style */
+.home-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+/* Secondary button style */
+.home-button.secondary {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.home-button.secondary:hover {
+    background-color: #e7f0fc;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .home-button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}

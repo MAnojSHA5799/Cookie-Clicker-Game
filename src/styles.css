@@ -1,0 +1,160 @@
+/* General Reset */
+body {
+    /* padding: 5px; */
+    margin: 5px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/public/bg.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar-links a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links button {
+    margin: 0 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar-links button:hover {
+    background-color: #003f7f;
+}
+
+/* Task Board Styling */
+.task-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.task-column {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    background-color: #a71d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .task-board {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links a,
+    .navbar-links button {
+        margin: 0.5rem 0;
+    }
+}
+.create-task-container {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-task-container h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.create-task-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.create-task-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.create-task-form input,
+.create-task-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.create-task-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
