@@ -6,8 +6,8 @@ const Button = () => {
   const [prizes, setPrizes] = useState(0);
   const [message, setMessage] = useState('');
 
-  const API_BASE_URL = 'http://localhost:4000';  // Define your backend API port here
-
+  // const API_BASE_URL = 'http://localhost:4000';  // Define your backend API port here
+  const API_BASE_URL = 'https://cookie-clicker-game-backend.onrender.com';  // Define your backend API port here
   useEffect(() => {
     // Fetch player data when the component mounts
     axios.get(`${API_BASE_URL}/api/player`)
